@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.put('/parkings/:id', (req,res) => {
     const id = parseInt(req.params.id)
-    let parking = parking.find(parking => parking.id === id)
+    let parking = parkings.find(parking => parking.id === id)
     parking.name = req.body.name,
     parking.city = req.body.city,
     parking.type = req.body.type,
