@@ -1,0 +1,22 @@
+{
+  "name": "api_rest_node_js",
+  "version": "1.0.0",
+  "description": "An REST API with node and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mkl3364/API_REST_NODE_JS.git"
+  },
+  "author": "Mickael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mkl3364/API_REST_NODE_JS/issues"
+  },
+  "homepage": "https://github.com/Mkl3364/API_REST_NODE_JS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
