@@ -1,5 +1,7 @@
 # API_REST_NODE_JS
 
+![NodeJS-Express](/images/nodejs_express.jpg)
+
 Création d'une API Rest avec **NodeJS** et **Express**
 
 Le but de ce projet est de créer une API REST utilisant NodeJS et le framework Express afin d'éffectuer des opération CRUD sur l'API.
