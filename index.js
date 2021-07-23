@@ -61,7 +61,28 @@ app.post('/reservations', (req,res) => {
     res.status(200).json(reservations)
 })
 
+// Modification d'une reservation
+app.put('/parkings/:id/reservation', (req, res) => {
+    const id = parseInt(req.params.id)
+    let reservation = reservations.find(reservation => reservation.id === id)
+    reservation.parking = req.body.parking,
+    reservation.parkingId = req.body.parkingId,
+    reservation.city = req.body.city,
+    reservation.clientName = req.body.clientName,
+    reservation.vehicle = req.body.vehicle,
+    reservation.licensePlate = req.body.licensePlate,
+    reservation.checkin = req.body.checkin,
+    reservation.checkout = req.body.checkout,
+    res.status(200).json(reservation)
+})
 
+// Suppression d'une réservation
+app.delete('/parkings/:id/reservation', (req, res) => {
+    const id = parseInt(req.params.id)
+    let reservation = reservations.find(reservation => reservation.id === id)
+    reservations.splice(reservations.indexOf(reservation),1)
+    res.status(200).json(reservations)
+})
 
 
 

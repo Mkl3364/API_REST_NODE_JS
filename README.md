@@ -39,7 +39,7 @@ Un fichier JSON est diponible à la racine du projet et contient les information
 
 ``const express = require('express')``
 
-```const app = express()``
+``const app = express()``
 
 Le **const express = require('express')** permet d'importer la librairie express et ses fonctions.
 La constante **app** est l'instanciation d'un objet Express qui contient le serveur et ses méthodes.
