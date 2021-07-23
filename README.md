@@ -21,6 +21,8 @@ Ce projet se base sur une structure d'API qui contient des layers :
 - GIT : https://git-scm.com/downloads (notre système de gestion de versionnage pour notre projet)
 - WAMP SERVER (WINDOWS): https://www.wampserver.com/en/download-wampserver-64bits/ (notre serveur web local pour une création de base de donnée mysql en ligne de commande)
 
+Pour tster et exécuter les différentes requêtes HTTP (GET, POST, PUT, PATCH, DELETE) sur notre API, il est recommandé d'utiliser l'outil **POSTMAN** : https://www.postman.com/
+
 1. Créer un serveur Express
 
 ``npm init``
@@ -36,11 +38,11 @@ Un fichier JSON est diponible à la racine du projet et contient les information
 3. Création du serveur express dans le fichier index.js
 
 ``const express = require('express')``
+
 ```const app = express()``
 
 Le **const express = require('express')** permet d'importer la librairie express et ses fonctions.
 La constante **app** est l'instanciation d'un objet Express qui contient le serveur et ses méthodes.
 
-BONUS : Pour éviter d'ouvrir et fermer le serveur Node, il est possible d'utiliser la librairie Nodemon qui permet de relancer automatiquement le serveur node à chaque fois que l'on sauvegarde un fichier.
-
-
+BONUS : Pour éviter d'ouvrir et fermer le serveur Node, il est possible d'utiliser la librairie **Nodemon** qui permet de relancer automatiquement le serveur node à chaque fois que l'on sauvegarde un fichier.
+``npm install nodemon -g``

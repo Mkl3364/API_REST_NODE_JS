@@ -51,9 +51,18 @@ app.get('/parkings/:id/reservation', (req,res) => {
     res.status(200).json(reservation)
 })
 
+// Récupérer toutes les réservations
 app.get('/reservations', (req,res) => {
     res.status(200).json(reservations)
 })
+
+app.post('/reservations', (req,res) => {
+    reservations.push(req.body)
+    res.status(200).json(reservations)
+})
+
+
+
 
 
 
