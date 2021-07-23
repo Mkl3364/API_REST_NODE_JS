@@ -1,15 +1,10 @@
+const parkings = require('../repository/bdd.json')
+const reservations = require('../repository/reservation.json')
 const { json } = require('express');
 const express = require('express')
 const app = express()
-//var mysql = require('mysql');
-//const parkings = require('./repository/bdd.json')
-//const reservations = require('./repository/reservation.json')
-const appRouter = require('./routes/routes')
+const routes = {};
 
-// Middleware : rend possible l'accès au body des requêtes POST, PUT, PATCH
-app.use(express.json())
-
-/*
 
 // Modifier un parking
 app.put('/parkings/:id', (req,res) => {
@@ -87,10 +82,4 @@ app.delete('/parkings/:id/reservation', (req, res) => {
     res.status(200).json(reservations)
 })
 
-*/
-
-app.listen(8080, () => {
-    console.log('Serveur à l\'écoute');
-})
-
-
+module.exports = routes;
