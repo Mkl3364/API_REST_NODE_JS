@@ -1,0 +1,6 @@
+id,name,type,city
+1,Parking-1,AIRPORT,"ROISSY EN FRANCE"
+2,Parking-2,AIRPORT,BEAUVAIS
+3,Parking-3,AIRPORT,ORLY
+4,Parking-4,AIRPORT,NICE
+5,Parking-5,AIRPORT,LILLE

@@ -1,0 +1,7 @@
+id,parking,parkingId,city,clientName,vehicle,licensePlate,checkin,checkout
+1,"Parking 1",1,Paris,"Thomas Martin",car,ED432EF,2020-08-21T06:00:00Z,2020-08-27T06:00:00Z
+2,"Parking 1",1,Roissy,"Frédéric Bertholet",car,AB213CD,2020-08-20T06:00:00Z,2020-08-27T06:00:00Z
+3,"Parking 1",1,Roissy,"Anatole Basthoz",car,EB123KJ,2020-08-01T06:00:00Z,2020-08-17T06:00:00Z
+4,"Parking 2",2,Beauvais,"Caroline Wattremez",car,BD198DD,2020-08-21T06:00:00Z,2020-08-27T06:00:00Z
+5,"Parking 3",3,Orly,"Thomas Martin",car,ED432EF,2020-08-28T06:00:00Z,2020-08-29T06:00:00Z
+6,"Parking 4",4,Paris,"Elena Richardson",car,KJ233OE,2020-08-12T06:00:00Z,2020-08-17T06:00:00Z
