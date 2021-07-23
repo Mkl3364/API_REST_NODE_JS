@@ -13,6 +13,7 @@ Ce projet se base sur une structure d'API qui contient des layers :
 * Service : 
 * Repository : communication avec la base de donnée.
 
+
 # Prérequis
 
 ## Logiciel à installer :
@@ -21,7 +22,7 @@ Ce projet se base sur une structure d'API qui contient des layers :
 - GIT : https://git-scm.com/downloads (notre système de gestion de versionnage pour notre projet)
 - WAMP SERVER (WINDOWS): https://www.wampserver.com/en/download-wampserver-64bits/ (notre serveur web local pour une création de base de donnée mysql en ligne de commande)
 
-Pour tster et exécuter les différentes requêtes HTTP (GET, POST, PUT, PATCH, DELETE) sur notre API, il est recommandé d'utiliser l'outil **POSTMAN** : https://www.postman.com/
+Pour tester et exécuter les différentes requêtes HTTP (GET, POST, PUT, PATCH, DELETE) sur notre API, il est recommandé d'utiliser l'outil **POSTMAN** : https://www.postman.com/
 
 1. Créer un serveur Express
 
@@ -46,3 +47,7 @@ La constante **app** est l'instanciation d'un objet Express qui contient le serv
 
 BONUS : Pour éviter d'ouvrir et fermer le serveur Node, il est possible d'utiliser la librairie **Nodemon** qui permet de relancer automatiquement le serveur node à chaque fois que l'on sauvegarde un fichier.
 ``npm install nodemon -g``
+
+# Informations sur le projet
+
+Ce projet commence par l'utilisation de fichiers de données au format JSON pour effectuer les opérations CRUD. Puis les fichiers JSON sont convertis au format CSV pour une intégration dans une BDD mysql.
