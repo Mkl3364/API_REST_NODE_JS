@@ -36,3 +36,37 @@ let csvStream = fastcsv
   });
 
 stream.pipe(csvStream);
+
+/*
+
+For importing bdd.CSV
+
+Output :
+OkPacket {
+fieldCount: 0,
+affectedRows: 5,
+insertId: 0,
+serverStatus: 2,
+warningCount: 0,
+message: '2Enregistrements: 5  Doublons: 0  Avertissements: 0',
+protocol41: true,
+changedRows: 0
+}
+
+For importing reservation.CSV
+
+OkPacket {
+fieldCount: 0,
+affectedRows: 6,
+insertId: 0,
+serverStatus: 2,
+warningCount: 0,
+message: '2Enregistrements: 6  Doublons: 0  Avertissements: 0',
+protocol41: true,
+changedRows: 0
+}
+
+*/
+
+
+

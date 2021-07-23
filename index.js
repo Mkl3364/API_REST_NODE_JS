@@ -2,8 +2,8 @@ const { json } = require('express');
 const express = require('express')
 const app = express()
 var mysql = require('mysql');
-const parkings = require('./bdd.json')
-const reservations = require('./reservation.json')
+const parkings = require('./repository/bdd.json')
+const reservations = require('./repository/reservation.json')
 
 // Middleware : rend possible l'accès au body des requêtes POST, PUT, PATCH
 app.use(express.json())
