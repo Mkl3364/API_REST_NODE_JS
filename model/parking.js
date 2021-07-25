@@ -1,15 +1,25 @@
-const connection = require('../repository/connectionBDD')
+const config = require('../repository/connectionBDD')
+const mysql = require('mysql')
 const parking = {} // Un objet vide qui va contenir les méthodes
 // a exporté comme module
 
-parking.list = async function () {
-    return await connection.connect(function(err) {
-        if (err) throw err;
-        connection.query("SELECT * FROM parking", function(err, result) {
-            if (err) throw err;
-            console.log(result)
-        })
-    }
-    )}
+let connection = mysql.createConnection(config)
 
-module.exports = parking
+let sql = 'SELECT * FROM parking';
+connection.query(sql, (error, results) => {
+  if (error) {
+    return console.error(error.message);
+  }
+  console.log(results);
+});
+
+/*
+mysql.query("SELECT * FROM parking", function(err, lignes) {
+    if (err) throw err
+    console.log(lignes)
+    //parking.enr = result;
+})
+
+//module.exports = parking
+
+*/

@@ -4,7 +4,7 @@ const reservationController = {}
 reservationController.getParkings = async (req,res)=> {
     try {
         const docs = await reservations.list()
-        res.status(200).json(docs)
+        res.status(200).json(reservations)
     } catch (err) {
         console.log(err)
         throw err

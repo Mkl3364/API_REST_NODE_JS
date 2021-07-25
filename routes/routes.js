@@ -1,8 +1,6 @@
 const parkings = require('../repository/parking.json')
 const reservations = require('../repository/reservation.json')
-// const { json } = require('express');
 var express = require('express')
-//const routes = {};
 var router = express.Router()
 
 // Middleware : rend possible l'accès au body des requêtes POST, PUT, PATCH
