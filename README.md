@@ -50,7 +50,7 @@ BONUS : Pour éviter d'ouvrir et fermer le serveur Node, il est possible d'utili
 
 # Informations sur le projet
 
-Ce projet commence par l'utilisation de fichiers de données au format JSON pour effectuer les opérations CRUD. Puis les fichiers JSON sont convertis au format CSV pour une intégration dans une BDD mysql.
+Ce projet commence par l'utilisation de fichiers de données au format JSON pour effectuer les opérations CRUD. Puis les fichiers JSON sont convertis au format CSV pour une intégration dans une BDD mysql. L'API gère des emplacements de parkings et les réservations des places de parkings.
 
 Il possède 3 branches :
 * Une première branche pour effectuer les opérations CRUD sur deux fichiers JSON ("parking.json" et "reservation.json) et tester les requêtes POST, PUT et DELETE avec Postman
