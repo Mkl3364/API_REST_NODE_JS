@@ -13,13 +13,4 @@ connection.query(sql, (error, results) => {
   console.log(results);
 });
 
-/*
-mysql.query("SELECT * FROM parking", function(err, lignes) {
-    if (err) throw err
-    console.log(lignes)
-    //parking.enr = result;
-})
-
-//module.exports = parking
-
-*/
+module.exports = parking

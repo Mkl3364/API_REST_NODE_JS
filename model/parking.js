@@ -1,6 +1,6 @@
 const config = require('../repository/connectionBDD')
 const mysql = require('mysql')
-const parking = {} // Un objet vide qui va contenir les méthodes
+let parking = {} // Un objet vide qui va contenir les méthodes
 // a exporté comme module
 
 let connection = mysql.createConnection(config)
@@ -11,15 +11,8 @@ connection.query(sql, (error, results) => {
     return console.error(error.message);
   }
   console.log(results);
+  parking = results;
 });
 
-/*
-mysql.query("SELECT * FROM parking", function(err, lignes) {
-    if (err) throw err
-    console.log(lignes)
-    //parking.enr = result;
-})
 
-//module.exports = parking
-
-*/
+module.exports = parking
