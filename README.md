@@ -6,12 +6,12 @@ Création d'une API Rest avec **NodeJS** et **Express**
 
 Le but de ce projet est de créer une API REST utilisant NodeJS et le framework Express afin d'éffectuer des opération CRUD sur l'API.
 
-Ce projet se base sur une structure d'API qui contient des layers :
+Ce projet se base sur une architecture 3 tiers qui contient des layers :
 
-* Routeur : prend en charge les requêtes HTTP sur l'API et les route vers le controller.
-* Controller : consruit les données arrivant de la requête et les envoie au Service.
-* Service : 
-* Repository : communication avec la base de donnée.
+* Routes : prend en charge les requêtes HTTP sur l'API et les route vers le controller.
+* Controller : consruit les données arrivant de la requête et les envoie au Model.
+* Model : effectue des requêtes vers la base de données.
+* Repository : contient la configuration et crée la connexion avec la base de donnée.
 
 
 # Prérequis
@@ -51,3 +51,8 @@ BONUS : Pour éviter d'ouvrir et fermer le serveur Node, il est possible d'utili
 # Informations sur le projet
 
 Ce projet commence par l'utilisation de fichiers de données au format JSON pour effectuer les opérations CRUD. Puis les fichiers JSON sont convertis au format CSV pour une intégration dans une BDD mysql.
+
+Il possède 3 branches :
+* Une première branche pour effectuer les opérations CRUD sur deux fichiers JSON ("parking.json" et "reservation.json) et tester les requêtes POST, PUT et DELETE avec Postman
+* Une deuxième branche pour tester la connexion avec la base de donnée, importer les fichier JSON au préalable converti au format csv dans une base de donnée crée (api_rest), création du dossier repository qui contient la connexion avec la base de donnée.
+* Une troisème branche pour mettre en place l'architecture 3 tiers d'une API REST, création des dossiers controller, model ainsi que route. Réorganisation des fichiers dans les dossiers et mise en place des connexion entre les routes, controllers et model.
